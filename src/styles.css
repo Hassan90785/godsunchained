@@ -1,1 +1,166 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: rgb(15, 27, 39) !important;
+  color: white !important;
+}
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+.container-fluid{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.header-container {
+  position: fixed;
+  z-index: 22;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background: rgb(15, 27, 39);
+  border-bottom: 1px solid rgb(29, 47, 65);
+  position: relative;
+}
+
+.nav-item-icon {
+  font-size: 20px;
+}
+
+.nav-item-label {
+  font-size: 12px;
+}
+
+.nav-item-container > * {
+  color: rgb(113, 146, 176);
+}
+
+.nav-item-container {
+  width: 4.3rem;
+  display: inline-block;
+}
+
+.sign-in {
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  font-size: 0.9rem !important;
+  font-weight: bold !important;
+}
+
+.sign-in-container {
+  border-right: 1px solid rgb(29, 47, 65);
+}
+#statement {
+  margin: 3rem;
+  height: 52px;
+  min-width: 100px;
+  color: white;
+  background-color:  #174596; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#268191 10%, #174596 85%, #54bbcd 90%);
+  position: relative;
+  display: inline-block;
+  border-top: 5px solid #54bbcd;
+  border-bottom: 5px solid #54BBCD;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 42px;
+  cursor: pointer;
+}
+#statement:before,
+#statement:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  height: 37px;
+  width: 37px;
+  background: inherit;
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+#statement:before {
+  left: 0;
+  border-left: 5px solid #54BBCD;
+  border-bottom: 5px solid #54BBCD;
+}
+#statement:after {
+  left: 100%;
+  border-top: 5px solid #54BBCD;
+  border-right: 5px solid #54BBCD;
+}
+
+/*************Scroll bar**********************/
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+  background-color: #1d2f41;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #3d5a74;
+  box-shadow: inset 0 0 0 2px #1d2f41;
+}
+.container-body{
+  margin-top: 80px;
+  overflow-x: hidden !important;
+}
+/*****************GLOBAL COLORS**************************/
+.bg-black{
+  background: black !important;
+}
+.clr-gray{
+  color: gray;
+}
+.bg-gray{
+  background-color:rgba(39, 39, 39, 0.6);
+}
+/********************FOOTER SOCIAL ICONS**************************************/
+.icons{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 0.4rem;
+}
+
+.icons::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.icons:hover::before{
+  transform: scale(0);
+}
+
+.icons{
+  transition: 0.6s ease-in;
+}
+
+.icons:hover{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  color: #30336b;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+.footer-svg{
+  width: 2rem;
+}
