@@ -12,6 +12,12 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { TrialComponent } from './trial/trial.component';
+import { BuyPacksComponent } from './buy-packs/buy-packs.component';
+import { MarketComponent } from './market/market.component';
+import { LearnComponent } from './learn/learn.component';
+import { CollectionsComponent } from './collections/collections.component';
+import { OpenPacksComponent } from './open-packs/open-packs.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +25,13 @@ import {MatInputModule} from '@angular/material/input';
     HomeComponent,
     BannerComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    TrialComponent,
+    BuyPacksComponent,
+    MarketComponent,
+    LearnComponent,
+    CollectionsComponent,
+    OpenPacksComponent
   ],
   imports: [
     BrowserModule,

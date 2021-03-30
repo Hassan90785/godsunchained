@@ -2,7 +2,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand pl-2" href="#">
+  <a class="navbar-brand pl-2">
         <img src="./assets/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
   </a>
 
@@ -10,65 +10,65 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">
-          <div class="nav-item-container text-lg-center">
+        <a class="nav-link">
+          <div class="nav-item-container text-lg-center" (click)="route('/')">
             <i class="fas fa-home d-block nav-item-icon"></i>
             <span class="nav-item-label">HOME</span>
           </div>
           </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <div class="nav-item-container text-lg-center">
+        <a class="nav-link">
+          <div class="nav-item-container text-lg-center"  (click)="route('/trial')">
             <i class="fas fa-home d-block nav-item-icon"></i>
             <span class="nav-item-label">TRIAL</span>
           </div></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><div class="nav-item-container text-lg-center">
+        <a class="nav-link"><div class="nav-item-container text-lg-center" (click)="route('/buyPacks')">
             <i class="fas fa-home d-block nav-item-icon"></i>
             <span class="nav-item-label">BUY PACKS</span>
           </div></a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          <div class="nav-item-container text-lg-center ">
             <i class="fas fa-home d-block nav-item-icon"></i>
             <span class="nav-item-label">MARKET</span>
           </div>
         </a>
         <div class="dropdown-menu bg-root w-100" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">BUY</a>
-          <a class="dropdown-item" href="#">SELL</a>
-          <a class="dropdown-item" href="#">OFFERS</a>
-          <a class="dropdown-item" href="#">STAR STORES</a>
+          <a class="dropdown-item" (click)="route('/market')">BUY</a>
+          <a class="dropdown-item" (click)="route('/market')">SELL</a>
+          <a class="dropdown-item" (click)="route('/market')">OFFERS</a>
+          <a class="dropdown-item" (click)="route('/market')">STAR STORES</a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="nav-item-container text-lg-center">
             <i class="fas fa-home d-block nav-item-icon"></i>
             <span class="nav-item-label">LEARN</span>
           </div>
         </a>
         <div class="dropdown-menu bg-root w-100" aria-labelledby="navbarDropdown2">
-            <a class="dropdown-item" href="#">CARDS</a>
-          <a class="dropdown-item" href="#">FAQ</a>
-          <a class="dropdown-item" href="#">LORE</a>
-          <a class="dropdown-item" href="#">BLOG</a>
-          <a class="dropdown-item" href="#">GUIDE</a>
-          <a class="dropdown-item" href="#">STAY PLAY</a>
-          <a class="dropdown-item" href="#">REFERRALS</a>
+            <a class="dropdown-item" (click)="route('/learn')">CARDS</a>
+          <a class="dropdown-item" (click)="route('/learn')">FAQ</a>
+          <a class="dropdown-item" (click)="route('/learn')">LORE</a>
+          <a class="dropdown-item" (click)="route('/learn')">BLOG</a>
+          <a class="dropdown-item" (click)="route('/learn')">GUIDE</a>
+          <a class="dropdown-item" (click)="route('/learn')">STAY PLAY</a>
+          <a class="dropdown-item" (click)="route('/learn')">REFERRALS</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><div class="nav-item-container text-lg-center">
+        <a class="nav-link"><div class="nav-item-container text-lg-center"  (click)="route('/collections')">
             <i class="fas fa-home d-block nav-item-icon"></i>
             <span class="nav-item-label">COLLECTIONS</span>
           </div></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><div class="nav-item-container text-lg-center">
+        <a class="nav-link"><div class="nav-item-container text-lg-center"  (click)="route('/openPacks')">
             <i class="fas fa-home d-block nav-item-icon"></i>
             <span class="nav-item-label">OPEN PACKS</span>
           </div></a>

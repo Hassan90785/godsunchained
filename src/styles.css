@@ -257,6 +257,12 @@ body {
   background: transparent;
 
 }
+.dummy-height{
+  height:64vh;
+}
+.svg-container{
+  width: 46vw;
+}
 .border-tp{
   border-top: 2px solid rgba(61,90,116,.5);
 }
