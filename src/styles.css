@@ -56,7 +56,7 @@ body {
   border-bottom: 1px solid rgb(29, 47, 65) !IMPORTANT;
   font-weight: 600 !important;
 }
-.navbar-collapse {
+.show{
   background: #0f1b27;
   padding: .7rem 1.0rem;
 }
@@ -149,6 +149,9 @@ body {
 .clr-gray {
   color: gray;
 }
+.clr-white {
+  color: gray;
+}
 
 .bg-root {
   background: rgb(15, 27, 39) !important;
@@ -212,4 +215,99 @@ body {
 .banner::before {
   border: 2px solid blue;
 
+}
+/****************Login************************/
+.login-container{
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  background: #0f1b27;
+  border: 2px solid rgba(61,90,116,.5);
+  box-sizing: border-box;
+  box-shadow: 5px 5px 15px rgb(0 0 0 / 40%);
+  margin-bottom: 75px;
+  max-width: 600px;
+  padding: 1rem 0 1rem 0;
+  align-items: center;
+  justify-content: space-around;
+}
+.forgotPassword{
+  color:#7192b0;
+  text-decoration: #7192b0 underline;
+}
+/***************************************/
+.form-field{
+  border: 2px solid #1666b5 !important;
+ border-radius: 0 !important;
+}
+/*****************Diamond Button***********/
+
+.transparent {
+  position: relative;
+  text-align: center;
+  font-family: 'Font Awesome 5 Pro';
+  line-height: 2.5rem;
+  vertical-align: middle;
+  color: #ffffff;
+  display: inline-block;
+  border-width: 0;
+  border-style: solid;
+  border-color: #959595;
+  cursor: pointer;
+  background: transparent;
+
+}
+.border-tp{
+  border-top: 2px solid rgba(61,90,116,.5);
+}
+.font-lg{
+  font-size: 1.3rem;
+}
+.font-md{
+  font-size: 1rem;
+}
+.diamond-pd-md{
+  padding: 1rem 2rem;
+}
+.diamond-pd-lg{
+  padding: 1rem 4rem;
+}
+.transparent span {
+  z-index: 20;
+  position: relative;
+}
+.diamond-bg::before,.diamond-bg::after{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
+  background: #959595; /* Old browsers */
+  background: -moz-linear-gradient(left,  #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 ); /* IE6-9 */
+
+}
+
+.transparent::before, .transparent::after {
+  content: '';
+  position: absolute;
+  border-color: inherit;
+  border-style: inherit;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+
+}
+
+.transparent::before {
+  border-width: 2px 2px 0 2px;
+  top: 0;
+  transform-origin: center bottom;
+  transform: perspective(0.5rem) rotateX(3deg);
+}
+
+.transparent::after {
+  border-width: 0 2px 2px 2px;
+  bottom: 0;
+  transform-origin: center top;
+  transform: perspective(0.5rem) rotateX(-3deg);
 }
